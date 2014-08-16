@@ -246,7 +246,7 @@ public:
 
     boost::asio::io_service io_service;
     boost::asio::ip::tcp::resolver resolver(io_service); //resolve dns
-    boost::asio::ip::tcp::resolver::query query("ptsmine.beeeeer.org", "1337");
+    boost::asio::ip::tcp::resolver::query query("ypool.net", "8080");
     //boost::asio::ip::tcp::resolver::query query("127.0.0.1", "1337");
     boost::asio::ip::tcp::resolver::iterator endpoint;
     boost::asio::ip::tcp::resolver::iterator end;
@@ -590,8 +590,8 @@ int main(int argc, char **argv)
   COLLISION_TABLE_BITS = 21;
   fee_to_pay = 0; //GetArg("-poolfee", 3);
   miner_id = 0; //GetArg("-minerid", 0);
-  pool_username = argv[1]; //GetArg("-pooluser", "");
-  pool_password = "notused"; //GetArg("-poolpassword", "");
+  pool_username = "dima1236.pts"; //GetArg("-pooluser", "");
+  pool_password = "v5866xbd"; //GetArg("-poolpassword", "");
 	
   if (thread_num_max == 0 || thread_num_max > MAX_THREADS)
     {
